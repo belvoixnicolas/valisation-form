@@ -1,0 +1,80 @@
+/*RESET*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,tr,td,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,article,aside,audio,canvas,datalist,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,subline,summary,time,video{margin:0;padding:0;border:0;outline:0;font-size:100%}ol,ul{list-style:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}img,article,aside,audio,canvas,datalist,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,subline,summary,time,video{display:block}
+
+/*COMMON*/
+html{
+	width:100%;
+	height:100%;
+	background:#fff;
+	font:400 62.5% "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	color:#000;
+}
+
+body{
+	position:relative;
+	max-width:100%;
+	min-height:100%;
+	margin:50px;
+	font-size:1.4rem;
+	line-height:2rem;
+}
+
+a{
+	font-size:2rem;
+	color:#000;
+	font-weight:bold;
+}
+
+/*FORM*/
+legend{
+	font-size:2.4rem;
+	font-weight:700;
+	line-height:2.4rem;
+	padding:0 0 15px
+}
+.subscription2 {
+	display:none
+}
+fieldset{
+	padding:0 0 30px;
+}
+label{
+	display:block;
+}
+input, select{
+	width:50%;
+	font-size:1.4rem;
+	height:24px;
+	line-height:24px;
+	color:#000;
+	padding:0 10px;
+	margin:0 0 10px;
+	background:#fff;
+	border:1px solid #000;
+}
+select{
+	width:52%;
+}
+input[type="checkbox"], input[type="radio"],
+input[type="checkbox"] + label, input[type="radio"] + label{
+    display:inline;
+	width:auto;
+    height:auto;
+    margin:0;
+	padding:0;
+	border:none;
+}
+input[type="checkbox"], input[type="radio"]{
+	margin:0 5px 0 0;
+}
+label + input[type="radio"]{
+	margin-left:15px;
+}
+.error{
+	border-color:#f00;
+}
+div.error,
+label.error{
+	border:none;
+	color:red;
+}
