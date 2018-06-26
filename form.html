@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery validation form</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+<main>
+<form method="post" action="#" name="dataForm" id="dataForm">
+    <fieldset>
+        <legend>Your subscription</legend>
+        <div>Subsciption for*:</div>
+        <input type="checkbox" id="d1" name="d1"><label for="d1">Day 1</label><br>
+        <input type="checkbox" id="d2" name="d2"><label for="d2">Day 2</label>
+        <div style="height:10px;"></div>
+        <div>Gender*:</div>
+        <input type="radio" id="mrs" name="gender"><label for="mrs">Mrs</label><input type="radio" id="mr" name="gender"><label for="mr">Mr</label>
+        <div style="height:10px;"></div>
+        <label for="fname">First name*:</label><input type="text" id="fname" name="fname" class="required">
+        <label for="name">Name*:</label><input type="text" id="name" name="name" class="required">
+        <label for="company">Company*:</label><input type="text" id="company" name="company" class="required">
+        <label for="email">E-mail*:</label><input type="email" id="email" name="email" class="required">
+    </fieldset>
+
+    <div style="padding:0 0 30px;"><input type="checkbox" id="otherMember" name="otherMember"><label for="otherMember">Subscribe another company member</label></div>
+
+    <fieldset class="subscription2">
+        <legend>Your colleague subscription</legend>
+        <div>Dates*:</div>
+        <input type="checkbox" id="d1-2" name="d1-2"><label for="d1-2">Day 1</label><br>
+        <input type="checkbox" id="d2-2" name="d2-2"><label for="d2-2">Day 2</label>
+        <div style="height:10px;"></div>
+        <div>Gender*:</div>
+        <input type="radio" id="mrs2" name="gender2"><label for="mrs2">Mrs</label><input type="radio" id="mr2" name="gender2"><label for="mr2">Mr</label>
+        <div style="height:10px;"></div>
+        <label for="fname2">First name*:</label><input type="text" id="fname2" name="fname2" class="required2">
+        <label for="name2">Name*:</label><input type="text" id="name2" name="name2" class="required2">
+        <label for="email2">E-mail*:</label><input type="email" id="email2" name="email2" class="required2">
+    </fieldset>
+
+    <fieldset>
+        <legend>Billing address</legend>
+        <label for="address">Address line 1*:</label><input type="text" id="address" name="address" class="required">
+        <label for="number">Number*:</label><input type="text" id="number" name="number" class="required">
+        <label for="zip">Postal code*:</label><input type="text" id="zip" name="zip" class="required">
+        <label for="city">City*:</label><input type="text" id="city" name="city" class="required">
+        <label for="country">Country*:</label><select id="country" name="country" class="required">
+        	<option selected>Choose</option>
+        	<option value="UK">UK</option>
+        	<option value="US">US</option>
+        </select>
+    </fieldset>
+    <a href="javascript:void(0);" onClick="checkForm();">Subscribe</a>
+</form>
+</main>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
